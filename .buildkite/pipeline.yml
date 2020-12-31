@@ -31,41 +31,41 @@ steps:
       message: '${BUILDKITE_MESSAGE}'
     async: true
 
-  - label: 'Trigger Node pipeline'
-    depends_on: "package-js"
-    trigger: 'bugsnag-js-node'
-    build:
-      branch: '${BUILDKITE_BRANCH}'
-      commit: '${BUILDKITE_COMMIT}'
-      message: '${BUILDKITE_MESSAGE}'
-    async: true
-
-  - label: 'Trigger Expo pipeline'
-    depends_on: "publish-js"
-    trigger: 'bugsnag-js-expo'
-    build:
-      branch: '${BUILDKITE_BRANCH}'
-      commit: '${BUILDKITE_COMMIT}'
-      message: '${BUILDKITE_MESSAGE}'
-    async: true
-
-  - label: 'Trigger React Native pipeline'
-    depends_on: "publish-js"
-    trigger: 'bugsnag-js-react-native'
-    build:
-      branch: '${BUILDKITE_BRANCH}'
-      commit: '${BUILDKITE_COMMIT}'
-      message: '${BUILDKITE_MESSAGE}'
-    async: true
-
-  - label: 'Trigger React Native CLI pipeline'
-    depends_on: "publish-js"
-    trigger: 'bugsnag-js-react-native-cli'
-    build:
-      branch: '${BUILDKITE_BRANCH}'
-      commit: '${BUILDKITE_COMMIT}'
-      message: '${BUILDKITE_MESSAGE}'
-    async: true
+#  - label: 'Trigger Node pipeline'
+#    depends_on: "package-js"
+#    trigger: 'bugsnag-js-node'
+#    build:
+#      branch: '${BUILDKITE_BRANCH}'
+#      commit: '${BUILDKITE_COMMIT}'
+#      message: '${BUILDKITE_MESSAGE}'
+#    async: true
+#
+#  - label: 'Trigger Expo pipeline'
+#    depends_on: "publish-js"
+#    trigger: 'bugsnag-js-expo'
+#    build:
+#      branch: '${BUILDKITE_BRANCH}'
+#      commit: '${BUILDKITE_COMMIT}'
+#      message: '${BUILDKITE_MESSAGE}'
+#    async: true
+#
+#  - label: 'Trigger React Native pipeline'
+#    depends_on: "publish-js"
+#    trigger: 'bugsnag-js-react-native'
+#    build:
+#      branch: '${BUILDKITE_BRANCH}'
+#      commit: '${BUILDKITE_COMMIT}'
+#      message: '${BUILDKITE_MESSAGE}'
+#    async: true
+#
+#  - label: 'Trigger React Native CLI pipeline'
+#    depends_on: "publish-js"
+#    trigger: 'bugsnag-js-react-native-cli'
+#    build:
+#      branch: '${BUILDKITE_BRANCH}'
+#      commit: '${BUILDKITE_COMMIT}'
+#      message: '${BUILDKITE_MESSAGE}'
+#    async: true
 
   #
   # Core tests and checks
