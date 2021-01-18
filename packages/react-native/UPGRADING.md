@@ -153,6 +153,8 @@ Alternatively you can still configure in code:
 + Bugsnag.start(this /* app context */, config);
 ```
 
+See the [Configuration Options for Android](https://docs.bugsnag.com/platforms/android/configuration-options/) for reference.
+
 #### JS
 
 As part of the `bugsnag-js monorepo`, the JS interface now looks the same as our JS notifier, and uses the same names and concepts as our other platforms.
